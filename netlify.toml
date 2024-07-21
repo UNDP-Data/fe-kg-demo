@@ -1,0 +1,8 @@
+[build]
+command = "npm install && npm run build"  # Or the command you use to build your project
+publish = "dist"  # Or the directory where your build artifacts are located
+
+[[redirects]]
+from = "/api/*"
+to = "https://raw.githubusercontent.com/:splat"
+status = 200

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Graph Test</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #app {
+        display: flex;
+      }
+
+      #search-container {
+        position: absolute;
+        display: flex;
+        top: 15px;
+        left: 5px;
+        width: 254px;
+        margin: 5px;
+        position: relative;
+      }
+
+      #search-input {
+        font-family: "Lato", sans-serif;
+        width: 230px;
+        padding: 10px;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="./index.js"></script>
+  
+    <div id="app">
+      <div style="width: 200px; height: 100vh"></div>
+      <div>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search for entity" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
